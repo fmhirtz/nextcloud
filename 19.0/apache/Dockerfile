@@ -148,7 +148,7 @@ COPY config/* /usr/src/nextcloud/config/
 COPY ports.conf /etc/apache2/ports.conf
 COPY 000-default.conf /etc/apache2/sites-enabled/000-default.conf
 
-EXPOSE "8080/tcp";
+EXPOSE 8080/tcp
 
 ENTRYPOINT ["/entrypoint.sh"]
 CMD ["apache2-foreground"]
